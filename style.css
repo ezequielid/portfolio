@@ -1,3 +1,4 @@
+/* Estilo base para todos los tamaños de pantalla */
 .navbar {
     border-radius: 50px;
     position: relative;
@@ -68,4 +69,30 @@ ul.technologies li {
 .technologies img {
     max-height: 100px;
     margin-right: 10px;
+}
+
+/* Estilos específicos para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .card div:first-child {
+        order: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    img {
+        padding: 0;
+    }
 }
